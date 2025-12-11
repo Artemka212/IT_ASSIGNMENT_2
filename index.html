@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>My Reveal.js Presentation</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/reveal.js/dist/reveal.css">
+    <link rel="stylesheet" href="https://unpkg.com/reveal.js/dist/theme/moon.css" id="theme">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<div class="reveal">
+    <div class="slides">
+
+        <!-- Slide 1: horizontal -->
+        <section data-markdown>
+            <textarea data-template>
+# Reveal.js Demo
+## Assignment 2
+
+- Author: Artem Padalko
+- Course: Internet Technologies
+- Date: 11.12.2025
+            </textarea>
+        </section>
+
+        <section>
+
+            <!-- Slide 2: vertical 1 -->
+            <section data-markdown>
+                <textarea data-template>
+## What is Reveal.js?
+
+- HTML presentation framework  
+- Works directly in the browser  
+- Supports **Markdown**, images, code blocks and more
+                </textarea>
+            </section>
+
+            <!-- Slide 3: vertical 2 -->
+            <section data-markdown>
+                <textarea data-template>
+## Why use Reveal.js?
+
+1. Easy to publish on GitHub Pages  
+2. Uses web technologies (HTML, CSS, JS)  
+3. Supports both **horizontal** and **vertical** navigation
+                </textarea>
+            </section>
+
+        </section>
+
+        <!-- Slide 4: horizontal, with image -->
+<section data-markdown>
+<textarea data-template>
+## Example image
+
+Below is an example image used in the presentation:
+
+![alt](img/image.jpg)
+</textarea>
+</section>
+
+        <!-- Slide 5: horizontal, summary -->
+        <section data-markdown>
+            <textarea data-template>
+## Summary
+
+- We created a presentation using Reveal.js  
+- We used **Markdown formatting**  
+- We used a **non-default theme** (`moon`)  
+- We added an **image**  
+- We have **horizontal and vertical** navigation
+
+Thank you for your attention!
+            </textarea>
+        </section>
+
+    </div>
+</div>
+
+<!-- Core script -->
+<script src="https://unpkg.com/reveal.js/dist/reveal.js"></script>
+
+<!-- Plugins -->
+<script src="https://unpkg.com/reveal.js/plugin/markdown/markdown.js"></script>
+<script src="https://unpkg.com/reveal.js/plugin/highlight/highlight.js"></script>
+<script src="https://unpkg.com/reveal.js/plugin/notes/notes.js"></script>
+
+<script>
+    Reveal.initialize({
+        hash: true,
+        slideNumber: true,
+        plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+    });
+</script>
+
+</body>
+</html>
